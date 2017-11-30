@@ -4,10 +4,10 @@
 def key_for_min_value(name_hash)
   lowest_value = []
   name_hash.each {|name, value|
-    if value.abs < 100
+    if name == nil
+      return nil
+    elsif value.abs < 100
     lowest_value = value
-  else
-    nil
   end
 }
   return lowest_value

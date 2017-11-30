@@ -3,6 +3,6 @@
 
 def key_for_min_value(name_hash)
   name_hash.find {|n, v|
-    puts "#{n}" if v == name_hash.values.min
+
 }
 end

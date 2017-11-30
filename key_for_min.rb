@@ -2,8 +2,8 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  lowest_value = []
-  name_hash.find {|name, value|
+  lowest_value = 100
+  name_hash.each {|name, value|
     if value.abs < lowest_value
     lowest_value = value
   end

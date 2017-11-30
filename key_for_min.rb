@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   lowest_value = Float::INFINITY
-  lowest_key = []
+  lowest_key = {}
   if name_hash.empty?
     return nil
   else name_hash.each {|name, value|

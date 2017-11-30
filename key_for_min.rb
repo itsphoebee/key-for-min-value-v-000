@@ -2,7 +2,7 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  lowest_value = 10
+  lowest_value = Float::INFINITY
   lowest_key = []
   if name_hash.empty?
     return nil

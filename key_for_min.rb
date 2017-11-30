@@ -6,6 +6,7 @@ def key_for_min_value(name_hash)
   name_hash.find {|name, value|
     if value.abs > lowest_value
     value  = lowest_value
+  }
   end
   lowest_value
 end

@@ -2,9 +2,7 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  name_hash.map do |name, value|
-    if value[0] > value[1]
-    return value
-  end
-end
+  name_hash.find {|name, value|
+    puts name if value == name_hash.value.min
+}
 end
